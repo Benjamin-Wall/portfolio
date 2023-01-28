@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./hero.css";
 
 //Date manipulating library
-import * as dayjs from "dayjs";
+import dayjs from "dayjs";
 
 export const Hero = () => {
   const [age, setAge] = useState(0);
