@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 90%;
+}
+
+@media only screen and (max-width: 520px) {
+  .list {
+    width: 100vw;
+  }
+}

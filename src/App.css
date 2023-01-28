@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 1rem;
+
+  background-image: url("./assets/blob-scene-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1500px;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-image: url("./assets/blob-scene-vertical.svg");
+  }
+}

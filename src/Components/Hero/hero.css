@@ -1,0 +1,14 @@
+.headshot {
+  object-fit: contain;
+  border: 5px solid var(--accent-color);
+  border-radius: 50%;
+  transform: scale(0.7);
+}
+
+.intro-wrapper {
+  padding: 20px;
+}
+
+.intro-wrapper p {
+  font-size: 20px;
+}

@@ -1,0 +1,64 @@
+.card {
+  color: white;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(21px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  padding: 48px;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  margin: 10px;
+
+  max-height: 50%;
+
+  max-width: 280px;
+  min-width: 280px;
+}
+
+.card:hover {
+  border-color: var(--accent-color);
+  background-color: rgba(198, 35, 104, 0.1);
+}
+
+.button-wrapper {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+button {
+  width: 50%;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  border: none;
+  border-bottom: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+svg,
+span,
+a {
+  vertical-align: middle;
+  padding: 5px;
+}
