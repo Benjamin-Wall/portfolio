@@ -22,7 +22,7 @@ export const Hero = () => {
     <div className="intro-wrapper">
       <img
         className="headshot"
-        src="/headshot.png"
+        src="headshot.png"
       />
       <h1>Hello, my name is Ben!</h1>
       <p>
