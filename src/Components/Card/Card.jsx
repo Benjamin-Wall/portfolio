@@ -30,11 +30,13 @@ export const Card = ({
             <GoMarkGithub style={{ fontSize: "25px" }} />
           </a>
         </button>
-        <button>
-          <a href={siteUrl}>
-            <GoLinkExternal style={{ fontSize: "25px" }} />
-          </a>
-        </button>
+        {siteUrl === "" ? null : (
+          <button>
+            <a href={siteUrl}>
+              <GoLinkExternal style={{ fontSize: "25px" }} />
+            </a>
+          </button>
+        )}
         <button>
           <GoRepoForked style={{ fontSize: "25px" }} />
           <span>{forks < 1 ? 0 : forks}</span>
