@@ -17,7 +17,7 @@ export const Card = ({
   stars,
 }) => {
   return (
-    <div className="card">
+    <div className="card-with-blur card">
       <h2>
         {title.replace(/-/g, " ").replace(/\w\S*/g, (txt) => {
           return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
@@ -26,13 +26,19 @@ export const Card = ({
       <p>{description}</p>
       <div className="button-wrapper">
         <button>
-          <a href={repository}>
+          <a
+            href={repository}
+            target={"_blank"}
+          >
             <GoMarkGithub style={{ fontSize: "25px" }} />
           </a>
         </button>
         {siteUrl === "" ? null : (
           <button>
-            <a href={siteUrl}>
+            <a
+              href={siteUrl}
+              target={"_blank"}
+            >
               <GoLinkExternal style={{ fontSize: "25px" }} />
             </a>
           </button>
