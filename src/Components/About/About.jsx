@@ -1,10 +1,9 @@
 import React from "react";
-import "./about.css";
 
 export const About = () => {
   return (
     <>
-      <h1 id="about">👨‍💻 About me :</h1>
+      <h1 className="heading">👨‍💻 About me :</h1>
       <p>
         I am currently learning how to be a Full Stack Developer! I am also from
         the United Kingdom!. I have had a passion for computers since I was
