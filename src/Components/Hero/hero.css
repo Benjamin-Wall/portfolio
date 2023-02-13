@@ -1,14 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
 .headshot {
   object-fit: contain;
-  border: 5px solid var(--accent-color);
+  border: 5px solid rgba(var(--accent-color), 1);
   border-radius: 50%;
   transform: scale(0.7);
 }
 
-.intro-wrapper {
+.hero-wrapper {
   padding: 20px;
 }
 
-.intro-wrapper p {
+.hero-wrapper p {
   font-size: 20px;
+}
+
+#hero-age {
+  color: rgba(var(--accent-color), 1);
+  font-family: "Space Mono", monospace;
 }
