@@ -11,24 +11,41 @@ export const Hero = () => {
       const birthday = dayjs("2000-05-27");
       const currTime = dayjs();
       const age = currTime.diff(birthday, "year", true);
-      setAge(age.toString().substring(0, 12));
+      setAge(age.toFixed(10));
     }, 100);
     return () => {
       clearInterval(ageInterval);
     };
   });
 
+  const generateRandomAccent = () => {
+    const r = Math.floor(Math.random() * 256),
+          g = Math.floor(Math.random() * 256),
+          b = Math.floor(Math.random() * 256)
+
+    const newColor = `${r}, ${g}, ${b}`;
+    
+    document.documentElement.style.setProperty('--accent-color', newColor);
+  } 
+
   return (
-    <div className="intro-wrapper">
-      <img
-        className="headshot"
-        src="headshot.png"
-      />
-      <h1>Hello, my name is Ben!</h1>
-      <p>
-        I am <strong>{age} years</strong> old and I am currently learning to be
-        a Full-Stack Web Developer, Below you can learn more about me!
-      </p>
+    <div className="hero-wrapper">
+      <div className="hero-headshot">
+        <img
+          className="headshot"
+          src="headshot.png"
+          onClick={() => generateRandomAccent()}
+        />
+      </div>
+
+      <div className="hero-text">
+        <h1>Hello, my name is Ben!</h1>
+        <p>
+          I am <span id="hero-age">{age}</span>years old and I am currently
+          learning to be a Full-Stack Web Developer, Below you can learn more
+          about me!
+        </p>
+      </div>
     </div>
   );
 };
