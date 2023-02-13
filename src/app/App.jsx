@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 
 //Import Relevent CSS
 import "../assets/css/normalize.css";
+import "../assets/css/reusables.css";
 import "../index.css";
 import "../App.css";
 
@@ -12,7 +13,7 @@ import Store from "./Store";
 //Import Components
 import { Hero } from "../Components/Hero/Hero";
 import { About } from "../Components/About/About";
-import { Skills } from "../Components/Skills/Skills";
+import { SkillsList } from "../Components/SkillsList/SkillsList";
 import { Projects } from "../Components/Projects/Projects";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       <div className="container">
         <Hero />
         <About />
-        <Skills />
+        <SkillsList />
         <Projects />
       </div>
     </Provider>
